@@ -1,9 +1,13 @@
 import com.week.*;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 
+@Configuration
+@ComponentScan
 public class MyConfig {
     @Bean
     public WeekDay getDay() {
